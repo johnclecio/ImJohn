@@ -1,0 +1,134 @@
+body {
+        margin: 0;
+        padding: 0;
+        background-color: gray;
+        background-size: cover;
+        font-family: "Georgia", serif;
+        color: #ffffff;
+    }
+
+    /* Estilos Comuns para os Containers de Conteúdo (título, sumário, prólogo) */
+    .titulo, .sumario, .prologo {
+        max-width: 850px;
+        margin: 60px auto;
+        padding: 40px;
+        border-radius: 15px;
+        line-height: 1.8; /* Espaçamento padrão para o texto interno */
+        font-size: 19px; /* Tamanho padrão para o corpo do texto interno */
+    }
+
+    /* Fundos Específicos para Cada Seção */
+    .titulo {
+        background: url("/src/img/tema.jpeg") no-repeat center center fixed;
+    }
+    .sumario {
+        background: url("/src/img/sumario.jpeg") no-repeat center center fixed;
+    }
+    .prologo {
+        background: url("/src/img/prologo.jpeg") no-repeat center center fixed;
+    }
+
+    /* Títulos de Seção (quebram o padrão de 19px/1.8 para serem maiores) */
+    .titulo span, .prologo > span, .sumario > span {
+        display: block;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 25px;
+        line-height: 1.2; /* Espaçamento menor, ideal para títulos */
+    }
+
+    /* Estilos de Imagem (Aplica-se a <img> dentro de .titulo) */
+    .titulo img {
+        width: 100%;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+
+    /* Estilo para a Imagem de Capa (se estiver fora das divs de conteúdo) */
+    .capa img {
+        width: 100%;
+        display: block;
+        margin: 60px auto 20px auto; /* Mantendo margem superior/inferior, ajustando a inferior */
+        border-radius: 55px;
+        max-width: 920px;
+        padding: 40px;
+    }
+    
+    /* Estilos de Parágrafo */
+    p {
+        text-align: justify;
+        white-space: pre-line;
+    }
+
+    /* Número de página genérico */
+    .pag {
+        text-align: end;
+    }
+
+    /* --- Estilos Detalhados do Sumário --- */
+
+    .titulo-container {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Título principal do livro dentro do sumário */
+    .titulo-principal {
+        display: block;
+        font-size: 1.6em; 
+        font-weight: bold;
+        line-height: 1.8;
+        color: #ffffff;
+    }
+
+    /* Linha horizontal (<hr>) que separa o título do subtítulo */
+    .separador-titulo {
+        border: none;
+        height: 1px;
+        background-color: #ffffff;
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    /* Subtítulo "SUMÁRIO" */
+    .subtitulo {
+        display: block;
+        font-size: 1.2em; 
+        font-weight: bold;
+        margin-top: 5px;
+        color: #ffffff;
+        line-height: 1.8;
+    }
+
+    /* Lista de capítulos */
+    .lista-capitulos {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Cada item da lista (capítulo e página) */
+    .lista-capitulos li {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+
+    /* Título do capítulo */
+    .capitulo-titulo {
+        font-size: 19px; 
+        color: #ffffff;
+        line-height: 1.8;
+    }
+
+    /* Número da página (alinhado à direita) */
+    .capitulo-pagina {
+        font-size: 19px; 
+        font-weight: bold;
+        color: #ffffff;
+        margin-left: 10px;
+        flex-shrink: 0;
+        line-height: 1.8;
+    }
