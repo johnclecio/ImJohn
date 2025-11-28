@@ -19,13 +19,13 @@ body {
 
     /* Fundos Específicos para Cada Seção */
     .titulo {
-        background: url("/src/img/tema.jpeg") no-repeat center center fixed;
+        background: url("/src/img/tema.jpeg") ;
     }
     .sumario {
-        background: url("/src/img/sumario.jpeg") no-repeat center center fixed;
+        background: url("/src/img/sumario.jpeg");
     }
     .prologo {
-        background: url("/src/img/prologo.jpeg") no-repeat center center fixed;
+        background: url("/src/img/prologo.jpeg") ;
     }
 
     /* Títulos de Seção (quebram o padrão de 19px/1.8 para serem maiores) */
