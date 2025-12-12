@@ -19,7 +19,7 @@ body {
 
     /* Fundos Específicos para Cada Seção */
     .titulo {
-        background: url("/src/img/tema.jpeg") ;
+        background: url("/src/img/FUNDO.png") ;
     }
     .sumario {
         background: url("/src/img/sumario.jpeg");
